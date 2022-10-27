@@ -1,0 +1,18 @@
+str (input ("olá, gostaríamos que respondesse a nossa enquete para melhor direcioná-lo: " ))
+quantidade_de_rodas=int (input("Digite a quantidade de rodas do veiculo: "))
+peso_bruto_em_quilogramas= int (input ("Digite o peso bruto do veículo: "))
+quantidade_de_pessoas_no_veículo=int (input ("Qual é a quantidade de pessoas no veiculo: "))
+
+if quantidade_de_rodas == 2 or quantidade_de_rodas == 3: 
+   cnh = "A"
+elif quantidade_de_rodas == 4 and peso_bruto_em_quilogramas <= 3500 and quantidade_de_pessoas_no_veículo <= 8:
+ cnh = "B"
+elif quantidade_de_rodas >= 4: 
+    if peso_bruto_em_quilogramas >=3500 and peso_do_veículo <= 6000:
+      cnh = "C"
+elif quantidade_de_pessoas_no_veículo > 8: 
+  cnh = "D"
+elif peso_bruto_em_quilogramas > 6000:
+  cnh = "E"
+
+print (f"A categoria para a sua habilitação será: {cnh}")
